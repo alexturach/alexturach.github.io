@@ -12,6 +12,10 @@
       <h1>Кино.бай</h1>
       <p>Кино на любой вкус</p>
 
+      <form>
+      				<input type="search" name="search" placeholder="Поиск по сайту"> <button type="search">Поиск</button>
+      </form>
+
 	  <nav>
 	   <ul style ="list-style-type : none;">
 		  <li><a href="">Афиша</a></li>
@@ -70,7 +74,42 @@
           </tbody>
         </table>
 
-   </section><br>
+   </section><hr><br>
+
+   <article>
+      <form onreset="return confirm('Очистить форму?')" onsubmit="return confirm('Опубликовать комментарий?')">
+             <label>Оставьте комментайрий: </label><br><br>
+
+             <label for="name">Имя: <span class="required" style="color: red;" > * </span></label><input required="required" name="name" type="text"><br><br>
+             <label for="surname">Фамилия: <span class="required" style="color: red;"> * </span></label><input required="required" name="surname" type="text"><br><br>
+             <label for="email">E-mail: <span class="required" style="color: red;"> * </span></label><input required="required" name="email" type="email" ><br><br>
+
+
+             <details >
+               <fieldset name="sex">
+                  <legend>Пол</legend>
+                  <label>
+                     <input type="radio" name="sex" value="мужской" >мужской
+                  </label>
+                  <label>
+                     <input type="radio" name="sex" value="женский">женский
+                  </label>
+               </fieldset>
+               <br>
+               <label>
+                  <input type="checkbox" name="chek" >Буду рекомендовать фильм другим
+               </label>
+             </details><br><br>
+
+             <textarea name="comment" cols="40" rows="8" maxlength="900" aria-required="true" placeholder="Напишите ваше мнение о фильме..." required="required"></textarea><br><br>
+             <button type="submit">Отправить комментарий</button>
+             <button type="reset">Очистить</button>
+
+      </form><hr><br>
+
+      <dialog></dialog>
+
+   </article>
 </main>
 <footer>
   <a href="#top">Вверх</a>
