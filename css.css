@@ -1,13 +1,18 @@
 
+html {
+  min-width: 900px;
+}
 body {
    color: #333;
-   font: .8em tahoma, arial normal;
+   font: .8em tahoma, arial, normal;
+   background: #d4d4d4 url('http://st.kp.yandex.net/images/noBrandBg.jpg') 50% 0 no-repeat;
 }
 
 
 
+
 input [type=search] {
-  font-size: 1em;
+  font-size: 2em;
 }
 .fa {
   color: #8e8e8e;
@@ -17,17 +22,22 @@ img {
   height: 25em;
 }
 
+header {
+  color: #8e8e8e;
+}
+footer {
+  color: #8e8e8e;
+}
+footer a {
+  font-size: 1em;
+}
+
 header h1 {
-  color: #f60;
+  color: white;
   text-shadow: .1em .1em #4a4a4a;
   font-size: 2.5em;
   font-weight: bold;
 }
-
-mark {
-   color: inherit;
-}
-
 
 h1 {
   font-size: 1.3em;
@@ -46,11 +56,61 @@ figcaption {
 a {
   text-decoration: none;
   color: inherit;
+  font-size: 1.3em;
 }
-a:hover, mark, h1 {
+a:hover, h1 {
   color: #f60;
 }
 
 ul {
+  -webkit-padding-start: 1em;
   list-style-type : none;
+  color: inherit;
+}
+
+div.center {
+  width: 80em;
+  margin: 2em auto;
+  border-width: 1em;
+  padding: 1em;
+
+
+}
+div.header {
+  background:  linear-gradient(to bottom, #525252 50%, #4b4948 50%); /*linear-gradient(#8e8e8e, #1b1a1a);*/
+  height: auto;
+  padding: inherit;
+  border-width: inherit;
+  border-radius: 1em 1em 0em 0em;
+}
+div.main {
+  margin: inherit;
+  background: white;
+  border-width: inherit;
+  padding: inherit;
+  box-shadow: 0 0 1em rgba(82, 82, 82, 1);
+
+
+
+}
+div.aside{
+  margin: inherit;
+  background: white;
+  border-width: inherit;
+  padding: inherit;
+  box-shadow: 0 0 1em rgba(82, 82, 82, 1);
+}
+div.footer {
+  margin: inherit;
+  background: #2a2a2a;
+  padding: 1em 1em 1em 2em;
+  border-radius: 0em 0em 1em 1em;
+}
+div.film-names {
+    width: auto;
+    height: 4em;
+    border-left: 0.5em solid  #f60;
+    background: linear-gradient(white, lightgrey);
+    margin: 1em -1em 1em -1em;
+    padding: 0.5em 1em 0.5em 1em;
 }
