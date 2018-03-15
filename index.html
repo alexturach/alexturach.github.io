@@ -3,21 +3,22 @@
   <head>
     <title>Кино.бай</title>
 	<meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="CSS.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   </head>
 <body>
   <header>
-      <p>
-         <strong>Внимание!</strong> Этот сайт не использует технологии <abbr title="Cascading Style Sheets">CSS</abbr> и JavaScript, он создан только при помощи <abbr title="HyperText Markup Language">HTML</abbr>
-      </p>
-      <h1>Кино.бай</h1>
+      <h1>
+        <a href=""> Кино.бай </a>
+      </h1>
       <p>Кино на любой вкус</p>
 
       <form>
-              <input type="search" name="search" placeholder="Поиск по сайту"> <button type="submit">Поиск</button>
+              <input type="search" name="search" placeholder="Поиск по сайту"> <button type="submit"><span class="fa fa-search" /> </button>
       </form>
-      
+
 	  <nav>
-	    <ul style ="list-style-type : none;">
+	    <ul>
 		  <li><a href="">Афиша</a></li>
 		  <li><a href="">Фильмы</a></li>
 		  <li><a href="">Рейтинги</a></li>
@@ -26,24 +27,23 @@
       </ul>
 	  </nav>
 
-      <blockquote>
-          Бедствием немого кино были ненужные надписи,<br>
-          бедствием нынешнего - ненужные диалоги.<br>
-          <cite>Рене Клер</cite>
-      </blockquote>
+
    </header>
 
 
 <main>
-     Результаты поиска по запросу: <strong><mark>Властелин колец</mark></strong><hr>
-  <a target="_blank" href="page1.html">
-    <h1><mark>Властелин колец</mark>: Возвращение короля</h1>
-  </a>
 
-	<figure>
-	   <img src="data\img\img1.jpg" />
-	   <figcaption>Обложка фильма</figcaption>
-	</figure>
+    <p>Результаты поиска по запросу: <strong><mark>Властелин колец</mark></strong><p><hr>
+    <article>
+      <h1>
+        <a target="_blank" href="page1.html">
+             <mark>Властелин колец</mark>: Возвращение короля
+        </a>
+      </h1>
+	  <figure>
+	      <img src="data\img\img1.jpg" />
+	      <figcaption>Обложка фильма</figcaption>
+	  </figure>
     <section>
        <h1>Описание</h1>
        <p>
@@ -56,9 +56,14 @@
 	     </p>
        <p><strong>Год: </strong>2003,<strong>Оценка IMDb: </strong> 8.90 <small>(1 349 172)</small>, <strong>Бюджет: </strong>$94 000 000, <strong>Страна: </strong> США</p>
     </section><br>
-  <a target="_blank" href="page2.html">
-    <h1><mark>Властелин колец</mark>: Две крепости</h1>
-  </a>
+</article>
+
+<article>
+  <h1>
+    <a target="_blank" href="page2.html">
+      <mark>Властелин колец</mark>: Две крепости
+    </a>
+  </h1>
 	<figure>
 	   <img src="data\img\img3.jpg" />
 	   <figcaption>Обложка фильма</figcaption>
@@ -75,9 +80,14 @@
 	     </p>
        <p><strong>Год: </strong>2002,<strong>Оценка IMDb: </strong> 8.70 <small>(1 221 214)</small>, <strong>Бюджет: </strong>$94 000 000, <strong>Страна: </strong> США</p>
     </section><br>
-  <a target="_blank" href="page3.html">
-    <h1><mark>Властелин колец</mark>: Братство кольца</h1>
-  </a>
+  </article>
+
+  <article>
+    <h1>
+        <a target="_blank" href="page3.html">
+            <mark>Властелин колец</mark>: Братство кольца
+        </a>
+    </h1>
 
 	<figure>
 	   <img src="data\img\img2.jpg" />
@@ -92,9 +102,10 @@
 	   <h1>Актёры</h1>
        <p>
 	       Элайджа Вуд, Иэн МакКеллен, Вигго Мортенсен, Шон Бин, Орландо Блум, Джон Рис-Дэвис, Иэн Холм, Шон Эстин, Билли Бойд, Доминик Монахэн
-	   </p>
+	     </p>
        <p><strong>Год: </strong>2001,<strong>Оценка IMDb: </strong> 8.80 <small>(1 389 831)</small>, <strong>Бюджет: </strong>$93 000 000, <strong>Страна: </strong> США</p>
     </section>
+  </article>
 </main><br>
 
 <aside>
@@ -102,18 +113,29 @@
     <section>
        <h1>Чёрная Пантера</h1>
        <p>
-	       С первого взгляда можно решить, что Ваканда — обычная территория дикой Африки, но это не так. Здесь, в недрах пустынных земель, скрываются залежи уникального металла, способного поглощать вибрацию. Многие пытались добраться до него, разоряя всё на своём пути и принося смерть аборигенам, но каждый раз таинственный дух саванны — Чёрная Пантера — вставал на защиту угнетённых.
+	         С первого взгляда можно решить, что Ваканда — обычная территория дикой Африки, но это не так. Здесь, в недрах пустынных земель, скрываются залежи уникального металла, способного поглощать вибрацию. Многие пытались добраться до него, разоряя всё на своём пути и принося смерть аборигенам, но каждый раз таинственный дух саванны — Чёрная Пантера — вставал на защиту угнетённых.
            <br><small>Читать далее...</small>
-	   </p>
+	     </p>
     </section>
 
     <section>
         <h1>Чёрная Пантера</h1>
         <p>
-		   Пока Мстители и их союзники продолжают защищать мир от различных опасностей, с которыми не смог бы справиться один супергерой, новая угроза возникает из космоса: Танос. Межгалактический тиран преследует цель собрать все шесть Камней Бесконечности — артефакты невероятной силы, с помощью которых можно менять реальность по своему желанию.
+		       Пока Мстители и их союзники продолжают защищать мир от различных опасностей, с которыми не смог бы справиться один супергерой, новая угроза возникает из космоса: Танос. Межгалактический тиран преследует цель собрать все шесть Камней Бесконечности — артефакты невероятной силы, с помощью которых можно менять реальность по своему желанию.
            <br><small>Читать далее...</small>
-		</p>
+		    </p>
 
+    </section>
+</aside>
+
+<aside>
+   <h1>Цитата дня</h1>
+	 <section>
+	    <blockquote>
+            Бедствием немого кино были ненужные надписи,<br>
+            бедствием нынешнего - ненужные диалоги.<br>
+            <cite>Рене Клер</cite>
+      </blockquote>
     </section>
 </aside>
 
