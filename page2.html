@@ -3,57 +3,62 @@
   <head>
     <title>Кино.бай</title>
 	<meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="css.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   </head>
 <body>
   <header>
-      <p>
-         <strong>Внимание!</strong> Этот сайт не использует технологии <abbr title="Cascading Style Sheets">CSS</abbr> и JavaScript, он создан только при помощи <abbr title="HyperText Markup Language">HTML</abbr>
-      </p>
-      <h1>Кино.бай</h1>
-      <p>Кино на любой вкус</p>
-
-      <form>
-              <input type="search" name="search" placeholder="Поиск по сайту"> <button type="submit">Поиск</button>
-      </form>
-      
-	  <nav>
-	   <ul style ="list-style-type : none;">
-		  <li><a href="">Афиша</a></li>
-		  <li><a href="">Фильмы</a></li>
-		  <li><a href="">Рейтинги</a></li>
-		  <li><a href="">Журнал</a></li>
-		  <li><a href="">Оскар 2018</a></li>
-     </ul>
-	  </nav>
-
-      <blockquote>
-          Бедствием немого кино были ненужные надписи,<br>
-          бедствием нынешнего - ненужные диалоги.<br>
-          <cite>Рене Клер</cite>
-      </blockquote>
-   </header>
+      <div class="main-header">
+      <h1><a href=""> Кино.бай </a></h1>
+      <div class="search">
+        <form>
+          <input type="search" name="search" placeholder="Поиск по сайту"> <button type="submit"><span class="fa fa-search" /> </button>
+        </form>
+      </div>
+      </div>
+        <nav class="menubar">
+          <ul role="menubar">
+            <li role="menuitem"><a href="">Афиша</a></li>
+            <li role="menuitem"><a href="">Фильмы</a></li>
+            <li role="menuitem"><a href="">Рейтинги</a></li>
+            <li role="menuitem"><a href="">Журнал</a></li>
+            <li role="menuitem"><a href="">Оскар 2018</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="main-columns">
 <main>
-    <h1>Властелин колец: Две крепости</h1>
-	<figure>
-	   <img src="data\img\img3.jpg" />
-	   <figcaption>Обложка фильма</figcaption>
-	</figure>
+      <div class="film-names">
+        <h1>
+           <a target="_blank" href="page2.html">
+             Властелин колец: Две крепости
+           </a>
+        </h1>
+      </div>
+      <div class="description">
+        <figure>
+            <img src="data\img\img3.jpg" />
+            <figcaption>Обложка фильма</figcaption>
+        </figure>
+        <section>
+          <h1>Описание</h1>
+          <p>
+             Братство распалось, но Кольцо Всевластья должно быть уничтожено. Фродо и Сэм вынуждены доверить свои жизни Голлуму, который взялся провести их к вратам Мордора. Громадная Армия Сарумана приближается: члены братства и их союзники готовы принять бой
+          </p>
+          <h1>Актёры</h1>
+          <p>
+            Элайджа Вуд, Шон Эстин, Орландо Блум, Вигго Мортенсен, Иэн МакКеллен, Доминик Монахэн, Миранда Отто, Джон Рис-Дэвис, Энди Серкис, Билли Бойд
+          </p>
+        </section>
+      </div>
+        <div class="video-box">
+          <h1>Трейлер</h1>
+        </div>
 
-    <section>
-       <h1>Описание</h1>
-       <p>
-	       Братство распалось, но Кольцо Всевластья должно быть уничтожено. Фродо и Сэм вынуждены доверить свои жизни Голлуму, который взялся провести их к вратам Мордора. Громадная Армия Сарумана приближается: члены братства и их союзники готовы принять бой
-	     </p>
+      <iframe src="https://www.youtube.com/embed/HceZj-mOrMo"> </iframe>
 
-       <h1>Актёры</h1>
-       <p>
-	       Элайджа Вуд, Шон Эстин, Орландо Блум, Вигго Мортенсен, Иэн МакКеллен, Доминик Монахэн, Миранда Отто, Джон Рис-Дэвис, Энди Серкис, Билли Бойд
-	     </p>
-      <h1>Трейлер</h1>
-      <iframe width="480" height="360" src="https://www.youtube.com/embed/HceZj-mOrMo">
-      </iframe>
-      <br><br>
-      <table border="1">
+      <br>
+      <table>
          <thead>
             <tr>
                <th>Год</th>
@@ -71,47 +76,17 @@
             </tr>
           </tbody>
         </table>
-
-   </section><br>
-
-   <article>
-      <form onreset="return confirm('Очистить форму?')" onsubmit="return confirm('Опубликовать комментарий?')">
+        <form class="comment-box" onreset="return confirm('Очистить форму?')" onsubmit="return confirm('Опубликовать комментарий?')">
              <label>Оставьте комментайрий: </label><br><br>
-
-             <label for="name">Имя: <span class="required" style="color: red;" > * </span></label><input required="required" name="name" type="text"><br><br>
-             <label for="surname">Фамилия: <span class="required" style="color: red;"> * </span></label><input required="required" name="surname" type="text"><br><br>
-             <label for="email">E-mail: <span class="required" style="color: red;"> * </span></label><input required="required" name="email" type="email" ><br><br>
-
-
-             <details >
-		      <summary>Дополнительная иформация</summary>
-               <fieldset name="sex">
-                  <legend>Пол</legend>
-                  <label>
-                     <input type="radio" name="sex" value="мужской" >мужской
-                  </label>
-                  <label>
-                     <input type="radio" name="sex" value="женский">женский
-                  </label>
-               </fieldset>
-               <br>
-               <label>
-                  <input type="checkbox" name="chek" >Буду рекомендовать фильм другим
-               </label>
-             </details><br><br>
-
-             <textarea name="comment" cols="40" rows="8" maxlength="900" aria-required="true" required="required"></textarea><br><br>
+             <label for="name">Имя: <span class="required" > * </span></label><input required="required" name="name" type="text"><br>
+             <label for="surname">Фамилия: <span class="required"> * </span></label><input required="required" name="surname" type="text"><br>
+             <label for="email">E-mail: <span class="required"> * </span></label><input required="required" name="email" type="email" >
+             <textarea name="comment" aria-required="true" required="required"></textarea><br><br>
              <button type="submit">Отправить комментарий</button>
              <button type="reset">Очистить</button>
-
-      </form><hr><br>
-
-      <dialog></dialog>
-
-   </article>
+      </form>
 </main>
-
-
+</div>
 <footer>
   <a href="#top">Вверх</a>
   <address>За какой-либо информацией обращайтесь по адресу <strong><a href="mailto:john.smith@gmail.com">john.smith@gmail.com</a></strong></address>
