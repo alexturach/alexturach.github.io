@@ -1,12 +1,19 @@
-
 body {
-   color: #333;
-   font: .8em tahoma, arial, normal;
-   background: #d4d4d4 url('http://st.kp.yandex.net/images/noBrandBg.jpg') 50% 0 no-repeat;
-   width: 80%;
-   margin: 0  auto;
-   padding: 1em;
-   min-width: 400px;
+  background: #d4d4d4;
+  color: #333;
+  font: .9em tahoma, verdana, arial normal;
+  margin: 0;
+}
+button {
+        font-size: 1em;
+        cursor: pointer;
+        border: none;
+        background: #ddd;
+        padding: .5em 1em;
+}
+img {
+  width: 100%;
+  height: auto;
 }
 input[type=search] {
         font-size: 1em;
@@ -16,19 +23,8 @@ input[type=search] {
 .search button:hover {
         background: #ccc;
 }
-button {
-        font-size: 1em;
-        cursor: pointer;
-        border: none;
-        background: #ddd;
-        padding: .5em 1em;
-}
 .fa {
   color: #8e8e8e;
-}
-img {
-  height: 25em;
-  padding: 0 1em 0 0;
 }
 header, footer {
   color: #8e8e8e;
@@ -56,14 +52,10 @@ section h1 {
 figcaption {
   font-size: .9em;
   margin: 0;
+  text-align: center;
 }
 a:hover, h1 {
   color: #f60;
-}
-ul {
-  -webkit-padding-start: 1em;
-  list-style-type : none;
-  color: inherit;
 }
 div.film-names {
     background: linear-gradient(white, lightgrey);
@@ -73,56 +65,18 @@ div.film-names {
     margin: 0;
 }
 header {
-  background:  linear-gradient(to bottom, #525252 65%, #4b4948 35%); /*linear-gradient(#8e8e8e, #1b1a1a);*/
-  padding: 1em;
+  background: #4b4948;  /*linear-gradient(to bottom, #525252 65%, #4b4948 35%);*/
   border-width: inherit;
   border-radius: 1em 1em 0em 0em;
-}
-.menubar ul {
-  display: flex;
-  margin: auto;
-}
-li {
-  flex-grow: 1;
-  text-align: center;
-  color: white;
-}
-/*li:hover {
-  background: #ccc;
-}*/
-.main-columns {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-}
-main {
-  flex: 3;
-  justify-content: space-around;
-}
-aside {
-  flex: 1;
-  justify-content: space-around;
 }
 main, aside {
   margin: 2em;
   background: white;
   border-width: inherit;
-
 }
 blockquote, figure {
   margin: 0;
   padding-top: 1em;
-}
-form {
-  display: flex;
-}
-.main-header {
-  display: flex;
-}
-div.search {
-  display: inline-flex;
-  align-items: center;
-  margin-left: auto;
 }
 footer {
   background: #4b4948;
@@ -135,25 +89,24 @@ header, footer, aside, main {
 .description, footer, .film-footer, .search-request {
   padding: 1em;
 }
-main .description {
-  display: flex;
-}
-footer > a:before {
-	float: left;
-	content: '';
-	border-left: 0.7em solid transparent;
-	border-right: 0.7em solid transparent;
-	border-bottom: 1em solid currentColor;
+/* video */
+.video-box {
+  width: inherit;
+  background-color: lightgrey;
+  margin: 1em;
 }
 video {
   width: 96%;
+  height: 25rem;
   padding: 1em;
 }
 iframe {
   width: 96%;
-  height: 400px;
+  height: 25rem;
   padding: 1em;
 }
+
+/* table */
 table {
   width: 100%;
   text-align: center;
@@ -165,6 +118,11 @@ thead {
 }
 tbody {
   background-color: #ffc8aa;
+}
+
+/* form */
+form {
+  display: flex;
 }
 form.comment-box {
   width: auto;
@@ -182,13 +140,36 @@ label, .comment-box input, textarea {
 }
 textarea {
   height: 10em;
-}
-.video-box {
-  width: inherit;
-  background-color: lightgrey;
-  margin: 1em;
+  resize: none;
 }
 
+.main-header {
+  text-align: center;
+  padding: 1em;
+}
+div.search {
+  display: inline-flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+/* menu */
+.main-menu {
+  padding: 1em;
+  background: #8e8e8e;
+}
+ul {
+  list-style-type : none;
+  color: inherit;
+  margin: auto;
+  padding: 0;
+}
+li {
+  text-align: center;
+  padding: 1em;
+}
+
+/* tooltip */
 abbr[data-tooltip] {
   position: relative;
   cursor: help;
@@ -206,7 +187,6 @@ abbr[data-tooltip]:before {
 	border-right: 0.7em solid transparent;
 	border-bottom: 1em solid #f60;
 }
-
 abbr[data-tooltip]:after {
   position: absolute;
   top: 160%;
@@ -221,8 +201,101 @@ abbr[data-tooltip]:after {
   border-radius: 1em;
   width: 10em;
 }
-
 abbr[data-tooltip]:hover:before,
 abbr[data-tooltip]:hover:after {
   visibility: visible;
+}
+
+/* desktop */
+@media screen and (min-width: 500px) {
+body {
+   color: #333;
+   font: .8em tahoma, arial, normal;
+   background: #d4d4d4 url('http://st.kp.yandex.net/images/noBrandBg.jpg') 50% 0 no-repeat;
+   width: 80%;
+   margin: 0  auto;
+   padding: 1em;
+   min-width: 500px;
+}
+header h1:hover, .film-names a:hover {
+  filter: blur(0.1em);
+}
+/* menu */
+.menubar ul {
+  display: flex;
+}
+img {
+  height: 25em;
+  width: auto;
+  padding: 0 1em 0 0;
+
+
+
+}
+/* animation */
+img:hover {
+  cursor: zoom-in;
+  animation: combo-animation 5s 2 /*infinite*/ alternate;
+
+}
+@keyframes combo-animation {
+  0% {
+    transform: skewX(10deg) skewY(-10deg) rotateX(0);
+    filter: saturate(0);
+  }
+  15% {
+    transform: skewX(-10deg) skewY(10deg) rotateX(180deg);
+  }
+  30% {
+    transform: skewx(10deg) skewY(-10deg) rotateY(0);
+  }
+  45% {
+    transform: skewX(-10deg) skewY(10deg) rotateY(180deg);
+  }
+  60% {
+    transform: skewX(10deg) skewY(-10deg) rotateZ(0);
+  }
+  70% {
+    transform: rotateZ(-45deg);
+  }
+  85% {
+    transform: rotateZ(180deg);
+  }
+  100% {
+      transform: rotateZ(15deg) scale(1.5);
+      filter: saturate(200%);
+  }
+}
+
+li {
+  flex-grow: 1;
+  color: white;
+}
+.main-columns {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+main {
+  flex: 3;
+  justify-content: space-around;
+}
+aside {
+  flex: 1;
+  justify-content: space-around;
+}
+.main-header {
+  display: flex;
+}
+main .description {
+  display: flex;
+}
+footer > a:before {
+	float: left;
+	content: '';
+	border-left: 0.7em solid transparent;
+	border-right: 0.7em solid transparent;
+	border-bottom: 1em solid currentColor;
+}
+
 }
