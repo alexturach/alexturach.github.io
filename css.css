@@ -153,23 +153,6 @@ div.search {
   margin-left: auto;
 }
 
-/* menu */
-.main-menu {
-  padding: 1em;
-  background: #8e8e8e;
-}
-ul {
-  list-style-type : none;
-  color: inherit;
-  margin: auto;
-  padding: 0;
-}
-li {
-  text-align: center;
-  padding: 1em;
-}
-
-/* tooltip */
 abbr[data-tooltip] {
   position: relative;
   cursor: help;
