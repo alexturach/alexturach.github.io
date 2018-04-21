@@ -4,6 +4,10 @@ body {
   font: .9em tahoma, verdana, arial normal;
   margin: 0;
 }
+.newBtn {
+  margin: 0 .5em 0 .5em;
+  float:right;
+}
 button {
         font-size: 1em;
         cursor: pointer;
@@ -124,7 +128,7 @@ tbody {
 form {
   display: flex;
 }
-form.comment-box {
+form.comment-box, #commits {
   width: auto;
   display: block;
   padding: 1em;
