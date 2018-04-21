@@ -5,6 +5,8 @@
 	<meta charset="utf-8" />
   <link rel="stylesheet" type="text/css" href="css.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<script src="data\scripts\js_commits.js"></script>
   </head>
 <body>
   <header>
@@ -77,15 +79,15 @@
             </tr>
           </tbody>
         </table>
-
-      <form class="comment-box" onreset="return confirm('Очистить форму?')" onsubmit="return confirm('Опубликовать комментарий?')">
+<div id="qq"> </div>
+      <form class="comment-box" onreset="return confirm('Очистить форму?')" >
              <label>Оставьте комментайрий: </label><br><br>
 
-             <label for="name">Имя: <span class="required" > * </span></label><input required="required" name="name" type="text"><br>
-             <label for="surname">Фамилия: <span class="required"> * </span></label><input required="required" name="surname" type="text"><br>
-             <label for="email">E-mail: <span class="required"> * </span></label><input required="required" name="email" type="email" ><br>
-             <textarea name="comment" aria-required="true" placeholder="Напишите ваше мнение о фильме..." required="required"></textarea>
-             <button type="submit">Отправить комментарий</button>
+             <label for="name">Имя: <span class="required" > * </span></label><input required="required" name="name" id="name" type="text"><br>
+            <!-- <label for="surname">Фамилия: <span class="required"> * </span></label><input required="required" name="surname" type="text"><br> -->
+             <label for="email">E-mail: <span class="required"> * </span></label><input required="required" name="email" id="email" type="email" ><br>
+             <textarea id="text" name="comment" aria-required="true" placeholder="Напишите ваше мнение о фильме..." required="required"></textarea>
+             <button id="push" type="submit">Отправить комментарий</button>
              <button type="reset">Очистить</button>
       </form>
 </main>
